@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Comparison with the Strict Equality Operator-->
+    // Setup
+function testStrict(val) {
+  if (val===7) { // Change this line
+    return "Equal";
+  }
+  return "Not Equal";
+}
+
+testStrict(10);
+testStrict(7);
+testStrict("7");
+<!--Practice comparing different values-->
+// Setup
+function compareEquality(a, b) {
+  if (a === b) { // Change this line
+    return "Equal";
+  }
+  return "Not Equal";
+}
+
+compareEquality(10, "10");
+compareEquality("10", 20);
+<!--Comparison with the Inequality Operator-->
+// Setup
+function testNotEqual(val) {
+  if (val!=99) { // Change this line
+    return "Not Equal";
+  }
+  return "Equal";
+}
+
+testNotEqual(99);
+testNotEqual("99");
+testNotEqual(12);
+testNotEqual("12");
+testNotEqual("bob");
+<!--Comparison with the Strict Inequality Operator-->
+// Setup
+function testStrictNotEqual(val) {
+  if (val!== 17) { // Change this line
+    return "Not Equal";
+  }
+  return "Equal";
+}
+testStrictNotEqual(17);
+testStrictNotEqual("17");
+testStrictNotEqual("17");
+testStrictNotEqual(12);
+testStrictNotEqual("bob");
+<!--Comparison with the Greater Than Operator-->
+function testGreaterThan(val) {
+  if (val>=100) {  // Change this line
+    return "Over 100";
+  }
+
+  if (val>=10) {  // Change this line
+    return "Over 10";
+  }
+
+  return "10 or Under";
+}
+
+testGreaterThan(10);
+testGreaterThan(0);
+testGreaterThan(11);
+testGreaterThan(99);
+testGreaterThan(100);
+testGreaterThan(101);
+testGreaterThan(150);
+<!--Comparison with the Greater Than Or Equal To Operator-->
+function testGreaterThan(val) {
+  if (val>=100) {  // Change this line
+    return "Over 100";
+  }
+
+  if (val>=10) {  // Change this line
+    return "Over 10";
+  }
+
+  return "10 or Under";
+}
+
+testGreaterThan(10);
+testGreaterThan(0);
+testGreaterThan(11);
+testGreaterThan(99);
+testGreaterThan(100);
+testGreaterThan(101);
+testGreaterThan(150);
+<!--Comparison with the Less Than Operator-->
+function testLessThan(val) {
+  if (val<25) {  // Change this line
+    return "Under25";
+  }
+
+  if (val<55) {  // Change this line
+    return "Under 55";
+  }
+
+  return "55 or Over";
+}
+
+testLessThan(10);
+testLessThan(0);
+testLessThan(24);
+testLessThan(25);
+testLessThan(54);
+testLessThan(55);
+testLessThan(99);
+}
+<!--Comparison with the Less Than Or Equal To Operator-->
+function testLessOrEqual(val) {
+  if (val<=12) {  // Change this line
+    return "Smaller Than or Equal to 12";
+  }
+
+  if (val<=24) {  // Change this line
+    return "Smaller Than or Equal to 24";
+  }
+
+  return "More Than 24";
+}
+
+testLessOrEqual(11);
+testLessOrEqual(0);
+testLessOrEqual(12);
+testLessOrEqual(23);
+testLessOrEqual(24);
+testLessOrEqual(25);
+testLessOrEqual(55);
+
+<!--Comparisons with the Logical And Operator-->
+function testLogicalAnd(val) {
+  // Only change code below this line
+
+  if (val>=25 && val<=50) {
+  
+      return "Yes";
+    
+  }
+
+  // Only change code above this line
+  return "No";
+}
+
+testLogicalAnd(10);
+<!--Comparisons with the Logical Or Operator-->
+function testLogicalOr(val) {
+  // Only change code below this line
+
+  if (val<10 || val>20) {
+    return "Outside";
+  }
+
+else
+  // Only change code above this line
+  return "Inside";
+}
+
+testLogicalOr(15);
+
+
+
+</body>
+</html>
